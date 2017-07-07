@@ -14,8 +14,11 @@ global.document = document;
 global.window = document;
 
 const Component = require('metal-component').Component;
-const ListJSX = require('./lib/ListJSX').ListJSX;
-const ListSoy = require('./lib/ListSoy').ListSoy;
 
+console.log('--- Rendering ListJSX ---');
+const ListJSX = require('./lib/ListJSX').ListJSX;
 console.log(Component.renderToString(ListJSX));
+
+console.log('--- Rendering ListSoy ---');
+const ListSoy = require('./lib/ListSoy').ListSoy;
 console.log(Component.renderToString(ListSoy));
